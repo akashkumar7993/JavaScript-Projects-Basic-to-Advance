@@ -1,0 +1,139 @@
+
+header{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+}
+header nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+header nav h5 span{
+    font-size: 20;
+    color: orange;
+    font-weight: 600;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header nav ul li{
+    padding: 3px 0px 3px 30px;
+}
+header nav ul li a{
+    text-decoration:  none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0,.6);
+    transition: .3s linear;
+}
+header nav ul li a:hover{
+    color: #111;
+}
+header nav ul li a i{
+    margin-right: 3px;
+}
+header .brand_nav{
+   width: 100%;
+   height: 50px;
+   background-color: #111;
+   color: #fff;
+   
+}
+header .brand_nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    transition: .3s linear;
+    padding: 0px 20px;
+}
+header .brand_nav li{
+    position: relative;
+    transition: .3s linear;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .brand_nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(193, 193, 193, .5);
+    transition: .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header .brand_nav li i{
+    margin-left: 10px;
+    transition: .3s linear;
+}
+header .brand_nav ul li:nth-last-child(1) i{
+    color: orangered;
+}
+header .brand_nav li a:hover{
+    color: rgb(193, 193, 193);
+}
+header .brand_nav ul li img{
+    width: 60px;
+}
+header .brand_nav ul li:nth-child(2){
+    background-color: orangered;
+    width: 130px;
+}
+header .brand_nav ul li:nth-child(4){
+    width: 130px;
+}
+header .brand_nav ul li:nth-child(2):hover{
+    background-color: orangered;
+}
+header .brand_nav ul li:nth-child(4):hover{
+    background-color: orangered;
+}
+header .brand_nav ul li:nth-child(1) .select_bx{
+    position: absolute;
+    top: 100%;
+    width: 90px;
+    height: 0px;
+    background: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999999;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0,.6); 
+    overflow: hidden;
+    transition: .1s linear;
+    opacity: 0;
+}
+header .brand_nav ul li:nth-child(1) .select_bx h5{
+    padding: 5px 0px;
+}
+header .brand_nav ul li:nth-child(1) .select_bx_active{
+    height: 100px;
+    opacity: 1;
+}
+header .brand_nav .li_bx{
+    width: 100%;
+    height: auto;
+    background: orangered;
+    padding: 10px 0px;
+}
+header .brand_nav .li_bx li{
+    color: #fff;
+    font-size: 16px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+header .brand_nav .li_bx li:hover{
+    color: #111;
+}
