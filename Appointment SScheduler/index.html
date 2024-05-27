@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  
+    <title>Your Appointment Scheduler</title>
+    
+  </head>
+<body id="bodyTag" onload="fetchAppointments()">
+    
+    <div class="container">
+        <h3 style="color: green;">Your Appointment Scheduler <small><a style="color: darkorange;">by Akash Kumar Mahato</a></small></h3>
+        <div class="jumbotron">
+            <h4 style="color: blue;">Add New Appointment</h4>
+            <br>
+            <form id="appmntInputForm">
+                <div class="form-group">
+                    <label for="appmntSubject">Subject Of The Appointment</label>
+                    <input type="text" class="form-control" id="appmntSubject" placeholder="Enter the reason for the meeting..." required>
+                </div>
+                <div class="form-group">
+                    <label for="toMeetWith">Who Are You Meeting With?</label>
+                    <input type="text" class="form-control" id="toMeetWith" placeholder="Enter who you have appointment with..." required>
+                </div>
+                <div class="form-group">
+                    <label for="venueOfAppmnt">Venue Or Company Of Appointment</label>
+                    <input type="text" class="form-control" id="venueOfAppmnt" placeholder="Venue of the appointment..." required>
+                </div>
+                <div class="form-group">
+                    <label for="dateOfAppmnt">Date Of The Appointment</label>
+                    <input type="date" class="form-control" id="dateOfAppmnt" placeholder="mm/dd/yyy" required>
+                </div>
+                <div class="form-group">
+                    <label for="timeOfAppmnt">Time Of The Appointment</label>
+                    <input type="time" class="form-control" id="timeOfAppmnt" placeholder="--:-- AM/PM" required>
+                </div>
+                <div class="form-group">
+                    <label for="appmntImportance">Importance Of The Appointment</label>
+                    <select class="custom-select" id="appmntImportance" required>
+                        <option selected>--</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Appointment</button>
+            </form>
+        </div>
+        
+        <div id="list-container" class="col-sm-12">
+            <div id="appmntsList">
+            
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; whyfokowhy / akashkumar7993</p>
+        </div>
+        
+    </div>
+
+<script src="https://chancejs.com/chance.min.js"></script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

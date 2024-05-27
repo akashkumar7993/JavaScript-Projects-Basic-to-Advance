@@ -1,0 +1,21 @@
+label{
+    color: darkgreen;
+    font-weight: 500;
+} 
+a:hover{
+    text-decoration: none;
+}
+        
+#bodyTag .card{
+    width: 60%;
+}
+        
+@media screen and (max-width: 760px){
+    small{
+        display: block;
+    }
+            
+    #bodyTag .card{
+        width: 100%;
+    }
+}
